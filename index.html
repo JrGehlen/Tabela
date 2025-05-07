@@ -5,31 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela</title>
     <style>
+       
+       body {
+        font-family: Arial, Helvetica, sans-serif;
 
-        table {
-            background-color: lightgray;
-            border-collapse: collapse;
-        }
+       }
 
-        thead th {
-            border: 1px solid black;
-        width: 200px;
-        height: 30px;
-        text-align: center;
+       table {
+        width: 500px;
+        border-collapse: collapse;
+       }
 
-        }
-
-        tbody td {
+       td, th {
         border: 1px solid black;
-        width: 200px;
-        height: 30px;
-        text-align: left;
-        padding: 3.5px;
-        }
+        padding: 10px;
+       }
 
-        .populacao {
-            text-align: right;
-        }
+       thead, tfoot {
+        background-color: gray;
+        color: white;
+        text-shadow: 1px 1px 1px black;
+       }
+       td.populacao {
+        text-align: right;
+       }
 
     </style>
 </head>
@@ -56,31 +55,34 @@
             <tbody>
                 <tr>
                     <td>São Paulo</td>
-                    <td class="populacao">45 919 049</td>
+                    <td class="populacao">45.919.049</td>
                 </tr>
                 <tr>
                     <td>Minas Gerais</td>
-                    <td class="populacao">21 322 641</td>
+                    <td class="populacao">21.322.641</td>
                 </tr>
                 <tr>
                     <td>Rio de Janeiro</td>
-                    <td class="populacao">17 219 679</td>
+                    <td class="populacao">17.219.679</td>
                 </tr>
                 <tr>
                     <td>Bahia</td>
-                    <td class="populacao">14 850 513</td>
+                    <td class="populacao">14.850.513</td>
                 </tr>
                 <tr>
                     <td>Paraná</td>
-                    <td class="populacao">11 824 665</td>
+                    <td class="populacao">11.824.665</td>
                 </tr>
                 <tr>
                     <td>Rio Grande do Sul</td>
-                    <td class="populacao">11 229 815</td>
+                    <td class="populacao">11.229.815</td>
                 </tr>
             </tbody>
             <tfoot>
-
+                <tr>
+                    <th>Total de Habitantes</th>
+                    <td class="populacao"><strong>210.147.125</strong></td>
+                </tr>
             </tfoot>
          </table>
 </body>
