@@ -4,8 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela</title>
+    <style>
+
+        table {
+            background-color: lightgray;
+            border-collapse: collapse;
+        }
+
+        thead th {
+            border: 1px solid black;
+        width: 200px;
+        height: 30px;
+        text-align: center;
+
+        }
+
+        tbody td {
+        border: 1px solid black;
+        width: 200px;
+        height: 30px;
+        text-align: left;
+        padding: 3.5px;
+        }
+
+        .populacao {
+            text-align: right;
+        }
+
+    </style>
 </head>
 <body>
     <h1> Uso de Tabelas Grandes </h1>
+
+    <!-- Anatomia para Tabelas Grandes 
+         
+    Table 
+      THead
+         Tr, Td, Th
+      Tbody
+         Tr, Td, Th
+      Tfoot
+         Tr, Td, Th
+      -->
+         <table>
+            <thead>
+                <tr>
+                    <th>Estado</th>
+                    <th>População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="populacao">45 919 049</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="populacao">21 322 641</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="populacao">17 219 679</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="populacao">14 850 513</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="populacao">11 824 665</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="populacao">11 229 815</td>
+                </tr>
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+         </table>
 </body>
 </html>
